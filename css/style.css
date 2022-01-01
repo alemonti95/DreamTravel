@@ -23,6 +23,18 @@ html {
     color: var(--primary-font-color);
 }
 
+
+#main-title{
+    display: none;
+}
+
+#phone-title{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 2;
+}
+
 a {
     text-decoration: none;
     color: var(--secondary-font-color);
@@ -370,8 +382,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         align-items: flex-start;
         justify-content: center;
         height: 60px;
-        position: absolute;
-        bottom: 0px;
+        position: relative;
+        bottom: 100px;
     }
 
     #slides{
