@@ -93,7 +93,7 @@ li {
 }
 
 main {
-    height: auto;
+    height: 0px;
 }
 
 #main-container {
@@ -107,7 +107,7 @@ main {
 
 #bg-title-container {
     display: flex;
-    background: url(../media/pexels-photo-1031200.jpeg);
+    background:linear-gradient(180deg, rgba(157, 173, 180, 0) 0%, #09455F 140%), url(../media/pexels-photo-1031200.jpeg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -283,9 +283,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     #container {
-        background:linear-gradient(180deg, rgba(9, 69, 95, 0) 0%, #09455F 100%), url(../media/pexels-photo-1031200.jpeg);
-        
-        background-size: cover;
+        background:linear-gradient(180deg, rgba(9, 69, 95, 0) 0%, #09455F 140%), url(../media/pexels-photo-1031200.jpeg);
+        background-size:cover;
         min-height: 100vh;
     }
 
@@ -395,16 +394,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     .dot{
-        background: grey;
-        height: 15px;
-        width: 15px;
+        background: rgb(207, 206, 206);
+        height: 17px;
+        width: 17px;
         border-radius:50%;
         
     }
 
     .dot:hover{
-        background: rgb(199, 198, 198);
+        background: rgb(255, 255, 255);
     }
-    
       
 }
