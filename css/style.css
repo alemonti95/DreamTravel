@@ -82,8 +82,8 @@ li {
 #burger-menu-2 {
     position: absolute;
     display: hidden;
-    top: 10px;
-    right: 29px;
+    top: 12px;
+    right: 15px;
     z-index: 1;
     cursor: pointer;
 }
