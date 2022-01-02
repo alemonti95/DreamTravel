@@ -187,6 +187,7 @@ main {
     max-width: 100vw;
     background: white;
     grid-row: 2;
+    
 }
 
 #form-booking {
@@ -425,4 +426,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         background: rgb(255, 255, 255);
     }
 
+    .dot:nth-child(1){
+        background:red;
+    }
 }
