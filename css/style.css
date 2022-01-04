@@ -290,7 +290,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     #container {
         background: linear-gradient(180deg, rgba(9, 69, 95, 0) 0%, #09455F 140%), url(../media/pexels-photo-1031200.jpeg);
         background-size: cover;
-        min-height: 100vh;
+        height: 100vh;
+        width: 100vw;
     }
 
     #menu {
@@ -426,7 +427,67 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         background: rgb(255, 255, 255);
     }
 
-    .dot:nth-child(1){
-        background:red;
+
+    /* carousel */
+    
+
+    /* Slideshow container */
+    .slideshow-container {
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+      z-index: 2;
     }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+/* end carousel */
 }
