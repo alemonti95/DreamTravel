@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/results.css">
+    <title>Results</title>
 </head>
 <body>
-    
+    <div id="container">
+        <header>
+            <div id="logo">
+                <h2>DreamVacation</h2>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </nav>
+            <nav id="menu-mobile">
+                <p>X</p>
+            </nav>
+        </header>
+        <main>
+            <section id="tour">
+                <h4 id="location-title">HAWAII</h4>
+                <div id="date-text">
+                    <p>3 march - 12 march</p>
+                </div>
+                <div id="tour-image">
+
+                </div>
+            </section>
+            <section id="book-search">
+                <h2>Select another date</h2>
+                <form id="form-booking" action="risultati.html">
+                    <label class="book-title" for="">Starting date</label>
+                    <input type="date">
+                    <label class="book-title" for="" id="end-date-title">End date</label>
+                    <input type="date">
+                    <label class="book-title" for="" id="locations-title">Locations</label>
+                    <input type="text" placeholder="Hawaii">
+                    <input type="submit" id="book-button" value="Book now!">
+                </form>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+
+    </div>
 </body>
 </html>
