@@ -17,7 +17,7 @@
 
 
 #container{
-    background: rgb(250, 250, 250);
+    background: white;
     height: 100vh;
     width: 100vw;
 }
@@ -72,6 +72,11 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+}
+
+#tour-image img{
+    height: 200px;
 }
 
 #location-title{
@@ -92,6 +97,12 @@ header{
     grid-row: 2;
 }
 
+#book-search h2{
+    color: #243D3F;
+    position: relative;
+    left: -50px;
+}
+
 #form-booking {
     display: flex;
     flex-direction: column;
@@ -100,7 +111,7 @@ header{
     width: 100vw;
     color: var(--secondary-font-color);
     margin-bottom: 100px;
-    margin-top: 85px;
+    margin-top: 35px;
 }
 
 #form-booking input[type=date] {
@@ -143,5 +154,15 @@ header{
 }
 
 #form-booking input[value="Book Now!"] {
+    font-size: 20px;
+}
+
+#form-booking label{
+    position: relative;
+    right: 90px;
+}
+
+#book-button{
+    margin-top: 20px;
     font-size: 20px;
 }
