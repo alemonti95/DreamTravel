@@ -61,12 +61,6 @@ li {
     font-size: 32px;
 }
 
-* {
-    outline: 1px solid #f00 !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-  }
-
 #lateral-menu ul li {
     margin: 15px;
 }
