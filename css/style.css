@@ -19,6 +19,7 @@ html {
     height: 100%;
     font-family: var(--primary-font-style);
     color: var(--primary-font-color);
+    width: auto;
 }
 
 body {
@@ -54,9 +55,9 @@ li {
     align-items: center;
     justify-content: center;
     text-align: center;
-
+    position: fixed;
     height: 100vh;
-    max-width: 100vw;
+    width: 100%;
     background: rgb(31, 30, 30);
     z-index: 2;
     font-size: 32px;
@@ -123,9 +124,9 @@ main {
     justify-content: center;
     font-size: 1.8em;
     width: auto;
-    height: 100%;
-
-    margin-top: 3em;
+    height: auto;
+    position: relative;
+    top: 3em;
 }
 
 #letsmake {
@@ -195,14 +196,13 @@ main {
 
 #form-booking {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: auto;
     width: 100vw;
     color: var(--secondary-font-color);
-    margin-bottom: 100px;
-    margin-top: 85px;
 }
 
 #form-booking input[type=date] {
@@ -288,7 +288,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        width: 80vw;
+        
+        width: 90vw;
     }
 
     #container {
