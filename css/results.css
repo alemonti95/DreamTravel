@@ -25,6 +25,8 @@ body {
     background: white;
     height: auto;
     max-width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 1100px 120px;
 }
 
 #logo {
