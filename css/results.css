@@ -82,8 +82,15 @@ header {
 
 }
 
+#tour-image {
+    padding: 0px 45px;
+}
+
 #tour-image img {
-    height: 200px;
+    height: auto;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 14px;
 }
 
 #location-title {
@@ -172,4 +179,27 @@ header {
 #book-button {
     margin-top: 20px;
     font-size: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#15C5CE;
+}
+
+#footer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary-font-color);
+    font-size: min(3vw, 16px);
+}
+
+#footer-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
 }
