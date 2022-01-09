@@ -224,6 +224,11 @@ footer {
     background:#15C5CE;
 }
 
+footer a{
+    color: var(--primary-font-color);
+    text-decoration: none;
+}
+
 #footer-info {
     display: flex;
     justify-content: center;
