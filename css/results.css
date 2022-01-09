@@ -48,12 +48,46 @@ header {
     border-top: 16px solid #15C5CE;
 }
 
-#menu-mobile {
+#burger-menu {
     position: relative;
     right: 15px;
 }
 
+#lateral-menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    top:0px;
+    height: 100vh;
+    width: 100%;
+    background: rgb(31, 30, 30);
+    z-index: 2;
+    font-size: 32px;
+}
 
+#lateral-menu ul li {
+    margin: 15px;
+    list-style-type: none;
+}
+
+#lateral-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#lateral-menu ul li a:hover {
+    color: rgb(139, 139, 136);
+    border-bottom: 2px solid rgb(139, 139, 136);
+}
+
+#burger-menu-2{
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+}
 
 #menu {
     display: none;
