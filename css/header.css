@@ -1,0 +1,23 @@
+.burger-menu {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    z-index: 1;
+    cursor: pointer;
+}
+.burger-menu.results{
+    top: 28px;
+}
+.burger-menu img{
+    display: block;
+    top: 27px;
+}
+
+@media only screen and (min-width:1000px) {
+    .burger-menu img{
+        display: none
+    }
+    .results .burger-menu img{
+        display: block
+    }
+}
