@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/results.css">
+    <link rel="stylesheet" href="css/header.css">
     <script src="js/main.js" defer></script>
     <title>Results</title>
 </head>
@@ -13,20 +14,23 @@
 <body>
     <div id="container">
         <header>
-            <div id="logo">
-                <h2>DreamVacation</h2>
-            </div>
+            <!-- Add link to logo to navigate to home from other pages, puoi cambiare lo stile del <a> -->
+            <a href="/" id="logo">
+                <!-- meglio non usare headings per il logo, perché dopo la struttura della pagina inizia con h2 invece che h1 -->
+                <div>DreamVacation</div>
+            </a>
             <nav id="menu">
                 <ul>
                     <li><a href="">About us</a></li>
                     <li><a href="">Login</a></li>
                 </ul>
             </nav>
-            <nav id="burger-menu">
+            <!-- per aiutarti, puoi usare una classe generale chiamata results -->
+            <nav id="burger-menu" class="burger-menu results">
                 <img src="media/menu2.svg" alt="menu-mobile">
             </nav>
             <nav id="lateral-menu">
-                <nav id="burger-menu-2">
+                <nav id="burger-menu-2" class="burger-menu results">
                     <img src="media/close-menu.svg" alt="burger-menu-icon">
                 </nav>
                 <ul>
