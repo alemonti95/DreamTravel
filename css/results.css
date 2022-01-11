@@ -240,6 +240,7 @@ main {
     font-family: var(--primary-font-style);
     cursor: pointer;
     min-width: 180px;
+    font-weight: 600;
 }
 
 #form-booking input[type=submit]:hover {

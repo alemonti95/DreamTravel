@@ -36,6 +36,8 @@ body {
     left: 48px;
     top: 15px;
     z-index: 2;
+    color: var(--input-bg-color);
+    font-weight: 600;
 }
 
 a {
@@ -159,6 +161,7 @@ main {
     font-family: var(--primary-font-style);
     margin-top: 20px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 #explore-button:hover {
@@ -222,6 +225,7 @@ main {
     color: var(--primary-font-color);
     font-family: var(--primary-font-style);
     cursor: pointer;
+    font-weight: 600;
 }
 
 #form-booking input[type=submit]:hover {
