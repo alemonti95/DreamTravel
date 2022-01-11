@@ -293,6 +293,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         display: block;
         margin-top: 68px;
         font-weight: 600;
+        color: var(--input-bg-color);
     }
 
     #menu ul {
