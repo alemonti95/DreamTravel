@@ -76,7 +76,13 @@ li {
     border-bottom: 2px solid rgb(139, 139, 136);
 }
 
-#burger-menu {
+/* importante, non usare ID, preferisci sempre classi, a meno che sia indispensabile avere 
+come vedi, hai dovuto creare due proprietà quasi identiche per l'hamburger, perché solo 1 elemento in tutto il html puo avere
+lo stesso id.  */
+
+/* Il modo in qui ti suggerisco di riscrivero si trova in header.css */
+
+/* #burger-menu {
     position: absolute;
     top: 12px;
     right: 15px;
@@ -91,7 +97,7 @@ li {
     right: 15px;
     z-index: 1;
     cursor: pointer;
-}
+} */
 
 main {
     height: 0px;
@@ -318,11 +324,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         color: #FE9B0E;
     }
 
-    #burger-menu img,
+    /* #burger-menu img,
     #burger-menu-2 {
         display: none;
 
-    }
+    } */
 
     #main-title {
         position: absolute;
