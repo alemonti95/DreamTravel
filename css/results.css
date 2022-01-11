@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
+
+
 :root {
     --primary-font-color: white;
     --secondary-font-color: #243D3F;
@@ -31,9 +33,17 @@ body {
 #logo {
     position: relative;
     left: 16px;
-    font-size: 12px;
+    font-size: 1.75rem;
     width: 245px;
     color: #15C5Ce;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:580px) {
+    #logo {
+        font-size: 1.125rem;
+    }
 }
 
 
@@ -47,10 +57,6 @@ header {
     border-top: 16px solid #15C5CE;
 }
 
-#burger-menu {
-    position: relative;
-    right: 15px;
-}
 
 #lateral-menu {
     display: none;
@@ -58,7 +64,7 @@ header {
     justify-content: center;
     text-align: center;
     position: fixed;
-    top:0px;
+    top: 0px;
     height: 100vh;
     width: 100%;
     background: rgb(31, 30, 30);
@@ -81,13 +87,6 @@ header {
     border-bottom: 2px solid rgb(139, 139, 136);
 }
 
-#burger-menu-2{
-    display: none;
-    position: absolute;
-    right: 15px;
-    top: 25px;
-}
-
 #menu {
     display: none;
     position: relative;
@@ -108,7 +107,7 @@ header {
     width: 160px;
 }
 
-main{
+main {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -121,10 +120,10 @@ main{
     flex-direction: column;
     text-indent: -30vw;
     width: 80vw;
-    
+
 }
 
-#tour-title{
+#tour-title {
     font-size: min(3vw, 16px);
     margin-top: 15px;
     margin-bottom: 65px;
@@ -142,30 +141,31 @@ main{
 #tour-image img {
     height: auto;
     width: 100%;
-    
+    max-width: 550px;
     border-radius: 14px;
 }
 
 
-#date-results{
+#date-results {
     color: var(--secondary-font-color);
 }
+
 #location-title {
     position: relative;
     font-size: 14px;
 }
 
-#location-subtitle{
+#location-subtitle {
     margin-right: 10px;
     color: var(--secondary-font-color);
     margin-top: 144px;
 }
 
-#suggestion-title{
+#suggestion-title {
     text-align: center;
 }
 
-#suggestion-title h2{
+#suggestion-title h2 {
     font-weight: 200;
 }
 
@@ -182,7 +182,7 @@ main{
     grid-row: 2;
 }
 
-#book-search label{
+#book-search label {
     font-weight: 600;
 }
 
@@ -203,7 +203,7 @@ main{
     margin-top: 35px;
 }
 
-#book-search h2{
+#book-search h2 {
     font-size: min(5vw, 18px);
 }
 
@@ -267,10 +267,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background:#15C5CE;
+    background: #15C5CE;
 }
 
-footer a{
+footer a {
     color: var(--primary-font-color);
     text-decoration: none;
 }
@@ -284,7 +284,7 @@ footer a{
     font-size: min(3vw, 16px);
 }
 
-#footer-title{
+#footer-title {
     display: flex;
     align-items: center;
     justify-content: center;
