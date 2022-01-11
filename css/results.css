@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
-=======
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
-/* quando hai tempo controlla SASS https://www.youtube.com/watch?v=Zz6eOVaaelI */
-
->>>>>>> 77a81116c3a45d5acc44a0be207c721da68c1dda
 :root {
     --primary-font-color: white;
     --secondary-font-color: #243D3F;
@@ -38,19 +31,9 @@ body {
 #logo {
     position: relative;
     left: 16px;
-    /* per le dimensioni del testo usa rem invece che pixel. 
-    I browser hanno l'opzione di ingrandire il testo per chi ha problemi di vista, 
-    se usi pixel il browser non è capace di modificare il testo, mentre rem è un'unita in percentuale a un'unita di base, di solito 16px
-    puoi usare questo converter: https://nekocalc.com/px-to-rem-converter  */
-    font-size: 1.75rem;
+    font-size: 12px;
     width: 245px;
     color: #15C5Ce;
-    text-decoration: none;
-}
-@media only screen and (max-width:580px) {
-    #logo{
-        font-size: 1.125rem;
-    }
 }
 
 
@@ -64,10 +47,10 @@ header {
     border-top: 16px solid #15C5CE;
 }
 
-/* #burger-menu {
+#burger-menu {
     position: relative;
     right: 15px;
-} */
+}
 
 #lateral-menu {
     display: none;
@@ -98,12 +81,12 @@ header {
     border-bottom: 2px solid rgb(139, 139, 136);
 }
 
-/* #burger-menu-2{
+#burger-menu-2{
     display: none;
     position: absolute;
     right: 15px;
     top: 25px;
-} */
+}
 
 #menu {
     display: none;
