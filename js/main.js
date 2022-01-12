@@ -26,7 +26,6 @@ hamburgerMenu2.addEventListener("click", () => {
 
 
 const startDate = document.getElementById("date");
-const endDate;
 const locationName = document.getElementById("location-name");
 
 
