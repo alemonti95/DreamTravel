@@ -23,3 +23,19 @@ hamburgerMenu2.addEventListener("click", () => {
     hamburgerMenu.style.display = "block";
     mainTitle.style.display = "block";
 })
+
+
+const startDate = document.getElementById("date");
+const endDate;
+const locationName = document.getElementById("location-name");
+
+
+
+function passData()
+{
+    let startDate;
+    let endDate;
+    locName = locationName.textContent;
+
+    console.log(locName);
+}
