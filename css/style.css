@@ -290,8 +290,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     #container {
         background: linear-gradient(180deg, rgba(9, 69, 95, 0) 0%, #09455F 140%), url(../media/pexels-photo-1031200.jpeg);
-        background-size:contain;
+        background-size:cover;
         height: 100vh;
+        
     }
 
     #menu {
