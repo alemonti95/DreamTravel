@@ -279,8 +279,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @media only screen and (min-width:1000px) {
 
     body{
-        background: linear-gradient(180deg, rgba(9, 69, 95, 0) 0%, #09455F 140%), url(../media/pexels-photo-1031200.jpeg);
-        background-size:cover;
         
     }
     header {
@@ -291,8 +289,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     #container {
-        
-        min-height: 100vh;
+        background: linear-gradient(180deg, rgba(9, 69, 95, 0) 0%, #09455F 140%), url(../media/pexels-photo-1031200.jpeg);
+        background-size:contain;
+        height: 100vh;
     }
 
     #menu {
@@ -314,6 +313,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     #menu ul li a:hover {
         color: #FE9B0E;
+    }
+
+    main{
+        height: auto;
     }
 
     #main-title {
