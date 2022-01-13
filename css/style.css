@@ -87,7 +87,7 @@ main {
 
 #main-container {
     display: grid;
-    height: auto;
+    height: 800px;
     max-width: 100vw;
     grid-template-columns: minmax(320px, 1fr);
     grid-template-rows: 600px 480px;
@@ -274,21 +274,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* Desktop Screen */
+
+
 @media only screen and (min-width:1000px) {
 
+    body{
+        background: linear-gradient(180deg, rgba(9, 69, 95, 0) 0%, #09455F 140%), url(../media/pexels-photo-1031200.jpeg);
+        background-size:cover;
+        
+    }
     header {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        
         width: 90vw;
     }
 
     #container {
-        background: linear-gradient(180deg, rgba(9, 69, 95, 0) 0%, #09455F 140%), url(../media/pexels-photo-1031200.jpeg);
-        background-size: cover;
-        min-height: 100vh;
         
+        min-height: 100vh;
     }
 
     #menu {
@@ -312,12 +316,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         color: #FE9B0E;
     }
 
-    /* #burger-menu img,
-    #burger-menu-2 {
-        display: none;
-
-    } */
-
     #main-title {
         position: absolute;
         font-size: 32px;
@@ -329,9 +327,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        height: 85vh;
-
-        min-height: auto;
+        height: auto;
+        position: relative;
+        top: 15vh;
         width: 100%;
     }
 
@@ -406,7 +404,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         justify-content: center;
         height: 60px;
         position: relative;
-        bottom: 100px;
+        top: 350px;
     }
 
     #slides {
