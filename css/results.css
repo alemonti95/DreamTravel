@@ -29,7 +29,7 @@ body {
     height: auto;
     max-width: 100vw;
     display: grid;
-    grid-template-rows: 1fr 1100px 120px;
+    
 }
 
 #logo {
@@ -115,7 +115,7 @@ main {
     flex-direction: column;
 }
 
-#tour {
+#tour{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,7 +140,7 @@ main {
     margin-bottom: 15px;
 }
 
-#tour-image img {
+#tour-image img, #alternative-tour-image >img {
     height: auto;
     width: 100%;
     max-width: 550px;
@@ -259,6 +259,16 @@ main {
 #book-button {
     margin-top: 20px;
     font-size: 20px;
+}
+
+#alternative-tours{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background: rgb(226, 226, 226);
+    width: 100%;
 }
 
 footer {
