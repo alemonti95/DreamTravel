@@ -29,7 +29,7 @@ body {
     height: auto;
     max-width: 100vw;
     display: grid;
-    
+
 }
 
 #logo {
@@ -87,6 +87,7 @@ header {
 #lateral-menu ul li a:hover {
     color: var(--hover-color);
     
+
 }
 
 #menu {
@@ -115,7 +116,7 @@ main {
     flex-direction: column;
 }
 
-#tour{
+#tour {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,6 +124,7 @@ main {
     text-indent: -30vw;
     width: 80vw;
     margin-top: 30px;
+
 }
 
 #tour-title {
@@ -140,7 +142,8 @@ main {
     margin-bottom: 15px;
 }
 
-#tour-image img, #alternative-tour-image >img {
+#tour-image img,
+#alternative-tour-image>img {
     height: auto;
     width: 100%;
     max-width: 550px;
@@ -165,10 +168,15 @@ main {
 
 #suggestion-title {
     text-align: center;
+
 }
 
 #suggestion-title h2 {
     font-weight: 200;
+}
+
+#show-more {
+    margin-bottom: 80px;
 }
 
 
@@ -261,7 +269,7 @@ main {
     font-size: 20px;
 }
 
-#alternative-tours{
+#alternative-tours {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -269,6 +277,49 @@ main {
     height: 100%;
     background: rgb(226, 226, 226);
     width: 100%;
+}
+
+#tour-suggestion {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-indent: -30vw;
+    width: 80vw;
+    margin-top: 30px;
+    background: #F8F8F8;
+
+}
+
+#tour-suggestion-title{
+    font-size: min(3vw, 16px);
+    margin-top: 15px;
+    
+    width: 70vw;
+    padding-bottom: 35px;
+}
+
+#alternative-title {
+    color: black;
+    font-size: 20px;
+    text-indent: 8px;
+    position: relative;
+
+}
+
+#show-more{
+    background: var(--hover-color);
+    border: none;
+    height: 48px;
+    width: 60%;
+    font-size: 24px;
+    border-radius: 8px;
+    color: var(--primary-font-color);
+    font-family: var(--primary-font-style);
+    cursor: pointer;
+    min-width: 180px;
+    font-weight: 600;
 }
 
 footer {
