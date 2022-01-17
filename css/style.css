@@ -22,7 +22,6 @@ html {
     min-height: 100%;
     font-family: var(--primary-font-style);
     color: var(--primary-font-color);
-    width: auto;
 }
 
 body {
@@ -120,7 +119,7 @@ main {
     font-size: 25px;
 }
 
-#help-box {
+#help-box { 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,11 +142,22 @@ main {
     border-radius: 2px;
 }
 
+#square h3 {
+    position: relative;
+    left: 40px;
+    bottom: 5px;
+}
+
 #explore-now {
     display: flex;
     align-items: center;
     min-width: 200px;
     gap: 35px;
+}
+
+#explore-now a{
+    color: var(--input-bg-color);
+    font-size: 16px;
 }
 
 #explore-button {
@@ -222,6 +232,7 @@ main {
     border: none;
     height: 48px;
     width: 60%;
+    font-size: 18px;
     border-radius: 8px;
     color: var(--primary-font-color);
     font-family: var(--primary-font-style);
@@ -233,9 +244,7 @@ main {
     background: #0f9299;
 }
 
-#form-booking input[value="Book Now!"] {
-    font-size: 20px;
-}
+
 
 #book-button {
     margin-top: 10px;
@@ -290,6 +299,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
        top: 185px;
        left: 11vw;
    }
+}
+
+@media only screen and (max-height:755px) and (min-width: 1000px) {
+    #slide-container{
+        position: fixed;
+        top: 65px;
+    }
 }
 
 @media only screen and (min-width:1000px) {
@@ -410,6 +426,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
 
     #help-box {
+        position: relative;
+    top: 160px;
+    right: 220px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -421,6 +440,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         cursor: pointer;
     }
 
+   
 
     #slide-container {
         display: flex;
@@ -430,6 +450,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         position: relative;
         
     }
+
     #square h3{
         position: relative;
         bottom: 5px;
@@ -460,34 +481,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     
     /* carousel */
 
-
-    /* Slideshow container */
-    .slideshow-container {
-        height: 100vh;
-        width: 100vw;
-        position: relative;
-        z-index: 2;
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-        display: none;
-    }
-
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-
-    /* The dots/bullets/indicators */
     .dot {
         cursor: pointer;
         height: 15px;

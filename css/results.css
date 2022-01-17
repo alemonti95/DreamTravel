@@ -116,15 +116,17 @@ main {
     flex-direction: column;
 }
 
+#title{
+    font-size: 5vw;
+}
+
 #tour {
     display: flex;
+    text-align: start;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    text-indent: -30vw;
     width: 80vw;
     margin-top: 30px;
-
 }
 
 #tour-title {
@@ -146,7 +148,7 @@ main {
 #alternative-tour-image>img {
     height: auto;
     width: 100%;
-    max-width: 550px;
+    max-width: 450px;
     border-radius: 14px;
 }
 
@@ -156,8 +158,7 @@ main {
 }
 
 #location-title {
-    position: relative;
-    font-size: 14px;
+    
 }
 
 #location-subtitle {
@@ -167,7 +168,7 @@ main {
 }
 
 #suggestion-title {
-    text-align: center;
+    
 
 }
 
@@ -186,18 +187,18 @@ main {
     justify-content: center;
     flex-direction: column;
     height: auto;
+    width: 65vw;
     background: white;
 }
 
 #book-search label {
     font-weight: 600;
+    
 }
 
 #book-search h2 {
     color: #243D3F;
-    position: relative;
-    font-size: 1.6rem;
-    left: -20px;
+    font-size: 1.3rem;
 }
 
 #form-booking {
@@ -205,7 +206,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90vw;
+    width: 90%;
+    max-width: 400px;
     color: var(--secondary-font-color);
     margin-bottom: 100px;
     margin-top: 35px;
@@ -218,11 +220,11 @@ main {
     color: var(--tertiary-font-color);
     border: none;
     height: 48px;
-    width: 60%;
+    width: 100%;
+    max-width: 400px;
     border-radius: 5px;
     text-indent: 5px;
     margin-bottom: 20px;
-    min-width: 180px;
 }
 
 #form-booking input[type=text] {
@@ -230,24 +232,24 @@ main {
     color: var(--tertiary-font-color);
     border: none;
     height: 48px;
-    width: 60%;
+    width: 100%;
+    max-width: 400px;
     text-indent: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
     font-family: var(--primary-font-style);
-    min-width: 180px;
 }
 
 #form-booking input[type=submit] {
     background: #15C5CE;
     border: none;
     height: 48px;
-    width: 60%;
+    width: 100%;
+    max-width: 300px;
     border-radius: 8px;
     color: var(--primary-font-color);
     font-family: var(--primary-font-style);
     cursor: pointer;
-    min-width: 180px;
     font-weight: 600;
 }
 
@@ -260,13 +262,14 @@ main {
 }
 
 #form-booking label {
+    align-self: flex-start;
     position: relative;
-    right: 90px;
+    
 }
 
 #book-button {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #alternative-tours {
@@ -280,22 +283,18 @@ main {
 }
 
 #tour-suggestion {
-
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-indent: -30vw;
     width: 80vw;
     margin-top: 30px;
     background: #F8F8F8;
-
 }
 
 #tour-suggestion-title{
     font-size: min(3vw, 16px);
     margin-top: 15px;
-    
     width: 70vw;
     padding-bottom: 35px;
 }
@@ -308,17 +307,23 @@ main {
 
 }
 
+#button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 #show-more{
     background: var(--hover-color);
     border: none;
     height: 48px;
-    width: 60%;
-    font-size: 24px;
+    width: 100%;
+    max-width: 200px;
+    font-size: 18px;
     border-radius: 8px;
     color: var(--primary-font-color);
     font-family: var(--primary-font-style);
     cursor: pointer;
-    min-width: 180px;
     font-weight: 600;
 }
 
@@ -326,6 +331,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto;
+    width: auto;
     background: #15C5CE;
 }
 
