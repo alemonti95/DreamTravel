@@ -24,4 +24,10 @@
     .results .burger-menu img{
         display: block
     }
+
+    #menu{
+        display: block;
+        font-weight: 600;
+    }
+
 }
