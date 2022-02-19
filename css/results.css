@@ -126,7 +126,7 @@ main {
 #tour {
     display: flex;
     text-align: start;
-    align-items: center;
+    
     flex-direction: column;
     width: 80vw;
     margin-top: 30px;
@@ -140,6 +140,7 @@ main {
     width: 70vw;
     max-width: 450px;
     padding-bottom: 35px;
+    color: var(--secondary-font-color);
 }
 
 #tour-image {
@@ -158,10 +159,21 @@ main {
 
 
 #date-results {
+    position: relative;
+    top: 8px;
+    left: 5px;
     color: var(--secondary-font-color);
+    font-size: 24px;
+}
+
+#location-title{
+    position: relative;
+    left: 5px;
+    color: #B1B9BB;
 }
 
 #location-subtitle {
+   
     margin-right: 10px;
     color: var(--secondary-font-color);
     margin-top: 144px;
@@ -287,7 +299,6 @@ main {
 /* È la terza sezione */
 #tour-suggestion {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 80vw;
@@ -304,7 +315,7 @@ main {
 }
 
 #alternative-title {
-    color: black;
+    color: var(--secondary-font-color);
     font-size: 20px;
     text-indent: 8px;
     position: relative;
