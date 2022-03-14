@@ -18,7 +18,7 @@ function changeBackgroundImage(){
 
 
 dotOne[0].addEventListener("click", () =>{
-    container.style.background =  "linear-gradient(180deg, rgba(9, 69, 95, 0) 0%, #09455F 140%), url(../media/pexels-photo-1031200.jpeg) no-repeat center center fixed";
+    container.style.background =  "linear-gradient(180deg, rgba(9, 69, 95, 0) 0%, #09455F 140%), url(media/pexels-photo-1031200.jpeg) no-repeat center center fixed";
     container.style.backgroundSize = "cover";
     container.style.backgroundAttachment = "fixed";
 });
