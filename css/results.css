@@ -339,6 +339,13 @@ main {
 }
 
 
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F8F8F8;
+    width: 100%;
+}
 /* Blocco con immagine di sfondo poco prima del footer nella modalità desktop */
 #dream-vacation {
     display: none;
@@ -375,6 +382,48 @@ footer a {
     gap: 35px;
 }
 
+@media only screen and (min-width: 650px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "sez1 sez2"
+        "sez3 dream-vacation";
+        grid-template-rows: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #wrapper, #tour-suggestion{
+        background: none;
+    }
+
+    
+    #tour{
+        grid-area: sez1;
+    }
+
+
+    #book-search{
+        grid-area: sez3;
+    }
+
+    #tour-suggestion{
+        grid-area: sez2;
+    }
+   
+     /* Blocco con immagine di sfondo poco prima del footer nella modalità desktop */
+     #dream-vacation {
+        display: flex;
+        grid-area: dream-vacation;
+        display: block;
+        height: 600px;
+        background: rgb(15, 109, 126);
+        width: 100%;
+    }
+    
+}
 /* Schermo Desktop */
 @media only screen and (min-width: 1450px) {
 
@@ -460,6 +509,9 @@ footer a {
 
     #tour img {}
 
+    #wrapper{
+        background: none;
+    }
     /* Blocco con immagine di sfondo poco prima del footer nella modalità desktop */
     #dream-vacation {
         grid-area: dream-vacation;
