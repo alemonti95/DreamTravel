@@ -11,6 +11,7 @@
     --primary-font-style: 'Poppins';
     --background-color: #15C5CE;
     --hover-color: #FE9B0E;
+    --line-color: #B1B9BB;
 }
 
 * {
@@ -125,16 +126,20 @@ main {
 #tour {
     display: flex;
     text-align: start;
-    align-items: center;
+    
+    justify-content: center;
+    max-width: 450px;
     flex-direction: column;
     margin-top: 30px;
+    padding: 15px;
 }
+
 
 #tour-title {
     font-size: min(3vw, 16px);
     margin-top: 15px;
     margin-bottom: 65px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--line-color);
     width: 70vw;
     max-width: 450px;
     padding-bottom: 35px;
@@ -147,8 +152,7 @@ main {
     margin-bottom: 15px;
 }
 
-#tour-image img,
-#alternative-tour-image>img {
+#tour-image img{
     height: auto;
     width: 100%;
     max-width: 450px;
@@ -164,14 +168,14 @@ main {
     font-size: 24px;
 }
 
-#location-title{
+#location-title {
     position: relative;
     left: 5px;
     color: #B1B9BB;
 }
 
 #location-subtitle {
-   
+
     margin-right: 10px;
     color: var(--secondary-font-color);
     margin-top: 144px;
@@ -198,7 +202,7 @@ main {
     justify-content: center;
     flex-direction: column;
     height: auto;
-    
+    width: 100%;
     background: white;
 }
 
@@ -224,6 +228,7 @@ main {
     margin-bottom: 100px;
     margin-top: 35px;
 }
+
 
 
 #form-booking input[type=date] {
@@ -284,25 +289,17 @@ main {
     font-size: 18px;
 }
 
-#alternative-tours {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    background: rgb(226, 226, 226);
-    width: 100%;
-}
+
 
 /* È la terza sezione */
 #tour-suggestion {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 80vw;
     max-width: 450px;
     margin-top: 30px;
     background: #F8F8F8;
+    padding: 15px;
 }
 
 #tour-suggestion-title {
@@ -341,13 +338,10 @@ main {
     font-weight: 600;
 }
 
-/* Il wrapper serve per dare sfondo alla sezione tour-suggestion */
-#wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #F8F8F8;
-    width: 100vw;
+
+/* Blocco con immagine di sfondo poco prima del footer nella modalità desktop */
+#dream-vacation {
+    display: none;
 }
 
 footer {
@@ -382,43 +376,98 @@ footer a {
 }
 
 /* Schermo Desktop */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1450px) {
+
+
 
     #container {
         display: grid;
         grid-template-rows: 148px auto 148px;
     }
 
-    header{
+    header {
         height: 120px;
     }
-    
+
     main {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "sez1 sez2 sez3"
+        "dream-vacation dream-vacation dream-vacation";
         grid-template-rows: auto;
-        grid-row: auto;
         align-items: center;
-        flex-direction: column;
         justify-content: center;
     }
 
+    #book-search::before{
+        content: ' ';
+        position: absolute;
+        z-index: 1;
+        width: 400px;
+        height: 550px;
+        border-left: 1px solid var(--line-color);
+        margin-bottom: 55px;
+        margin-right: 77px;
+    }
+
+    #tour{
+        grid-area: sez1;
+    }
+
+    /* Border-bottom del titolo della prima sezione */
+    #tour-title{
+        border: none;
+    }
+
+    #book-search{
+        grid-area: sez3;
+    }
+
+    #tour-suggestion{
+        grid-area: sez2;
+    }
+
+
     #tour,
     #book-search,
-    #wrapper {
-        max-width: 500px;
+    #tour-suggestion {
+        min-width: 350px;
         background: white;
         height: 618px;
         align-self: center;
         justify-self: center;
     }
 
+
+    /* Bottone show more della terza sezione */
+    #show-more{
+        display: none;
+    }
+
+    /* Titolo della terza sezione */
+    #alternative-title{
+        display: none;
+    }
+
+
     #tour-suggestion {
+        align-self: center;
+        justify-self: center;
         background: white;
     }
 
 
     #tour img {}
+
+    /* Blocco con immagine di sfondo poco prima del footer nella modalità desktop */
+    #dream-vacation {
+        grid-area: dream-vacation;
+        display: block;
+        height: 500px;
+        background: rgb(15, 109, 126);
+        width: 100%;
+    }
 
     footer {
         position: relative;
@@ -432,4 +481,25 @@ footer a {
         flex-direction: row;
         justify-content: space-between;
     }
+}
+
+@media only screen and (min-width: 1950px) {
+
+
+    
+    main{
+        display: grid;
+        grid-template-columns: 650px 650px 650px;
+        grid-template-areas: 
+        "sez1 sez2 sez3"
+        "dream-vacation dream-vacation dream-vacation";
+        grid-template-rows: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    
+
+    
 }
