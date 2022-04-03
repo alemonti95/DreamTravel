@@ -455,7 +455,7 @@ footer a:hover{
     }
 
     #dream-vacation {
-        background-image: url(/media/image_12.png);
+        background-image: url(../media/image_12.png);
         background-size: cover;
     }
 
@@ -516,7 +516,7 @@ footer a:hover{
     }
 
     #dream-vacation {
-        background-image: url(/media/image_12.png);
+        background-image: url(../media/image_12.png);
     }
 
     #book-search::before{
