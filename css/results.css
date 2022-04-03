@@ -61,7 +61,7 @@ header {
     border-top: 16px solid #15C5CE;
 }
 
-
+/* Container del menù che compare quando si clicca sul burger menu */
 #lateral-menu {
     display: none;
     align-items: center;
@@ -81,15 +81,20 @@ header {
     list-style-type: none;
 }
 
+/* Link dei burger menu modalità mobile */
 #lateral-menu ul li a {
     color: white;
     text-decoration: none;
 }
 
+/* Link dei burger menu hover modalità mobile */
 #lateral-menu ul li a:hover {
     color: var(--hover-color);
+}
 
-
+/* Bottone show more */
+#show-more:hover {
+    background: #fe7a0e;
 }
 
 #menu {
@@ -365,6 +370,10 @@ footer a {
     text-decoration: none;
 }
 
+footer a:hover{
+    color: var(--hover-color);
+}
+
 #footer-wrapper {
     display: flex;
     justify-content: center;
@@ -419,11 +428,56 @@ footer a {
         grid-area: dream-vacation;
         display: block;
         height: 600px;
-        background: rgb(15, 109, 126);
         width: 100%;
+    }
+
+    /* Posizionamento icona calendario input più a sinistra rispetto all'input */
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        position: relative;
+        left: -10px;
     }
     
 }
+
+
+@media only screen and (min-width: 650px)
+{
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    #tour-suggestion{
+        position: relative;
+        bottom: -45px;
+    }
+
+    #dream-vacation {
+        background-image: url(/media/image_12.png);
+        background-size: cover;
+    }
+
+    #tour{
+        align-self: center;
+        justify-self: center;
+    }
+    #tour-title{
+        border: none;
+    }
+
+   #book-search::before{
+       content: ' ';
+       border-top: 1px solid var(--line-color);
+       width: 80%;
+       position: relative;
+       bottom: 42px;
+   }
+
+
+}
+
+
 /* Schermo Desktop */
 @media only screen and (min-width: 1450px) {
 
@@ -449,16 +503,7 @@ footer a {
         justify-content: center;
     }
 
-    #book-search::before{
-        content: ' ';
-        position: absolute;
-        z-index: 1;
-        width: 400px;
-        height: 550px;
-        border-left: 1px solid var(--line-color);
-        margin-bottom: 55px;
-        margin-right: 77px;
-    }
+    
 
     #tour{
         grid-area: sez1;
@@ -469,21 +514,29 @@ footer a {
         border: none;
     }
 
-    #book-search{
-        grid-area: sez3;
+    #dream-vacation {
+        background-image: url(/media/image_12.png);
     }
+
+    #book-search::before{
+        border-top: none;
+        
+    }
+   
 
     #tour-suggestion{
         grid-area: sez2;
     }
 
 
+    /* Raggruppamento delle prime tre sezioni */
     #tour,
     #book-search,
     #tour-suggestion {
         min-width: 350px;
         background: white;
         height: 618px;
+        max-width: 450px;
         align-self: center;
         justify-self: center;
     }
@@ -501,6 +554,8 @@ footer a {
 
 
     #tour-suggestion {
+        position: relative;
+        bottom: 4px;
         align-self: center;
         justify-self: center;
         background: white;
@@ -510,14 +565,16 @@ footer a {
     #tour img {}
 
     #wrapper{
+        
         background: none;
+        min-width: 450px;
     }
+
     /* Blocco con immagine di sfondo poco prima del footer nella modalità desktop */
     #dream-vacation {
         grid-area: dream-vacation;
         display: block;
         height: 500px;
-        background: rgb(15, 109, 126);
         width: 100%;
     }
 
