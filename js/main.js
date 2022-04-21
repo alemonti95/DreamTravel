@@ -1,3 +1,4 @@
+/* Dichiarazione variabili */
 const firstDot = document.querySelector(".dot:nth-child(1)");
 const secondDot = document.querySelector(".dot:nth-child(2)");
 const thirdDot = document.querySelector(".dot:nth-child(3)");
@@ -29,12 +30,18 @@ const startDate = document.getElementById("date");
 const locationName = document.getElementById("location-name");
 
 
+/* creazione sessione per i dati inseriti nella form */
+var favoritemovie = "Shrek";
+sessionStorage.setItem("favoriteMovie", favoritemovie);
 
-function passData()
-{
-    let startDate;
-    let endDate;
-    locName = locationName.textContent;
 
-    console.log(locName);
-}
+/* gestione wrapper */
+const mediaQuery = window.matchMedia('(min-width: 650px)')
+
+if (mediaQuery.matches) {
+    const node = document.getElementById('wrapper');
+    node.replaceWith(node.children[0]);
+  }
+
+
+

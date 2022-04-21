@@ -344,7 +344,6 @@ main {
     font-weight: 600;
 }
 
-
 #wrapper{
     display: flex;
     justify-content: center;
@@ -409,11 +408,9 @@ footer a:hover{
         background: none;
     }
 
-    
     #tour{
         grid-area: sez1;
     }
-
 
     #book-search{
         grid-area: sez3;
@@ -437,7 +434,6 @@ footer a:hover{
         position: relative;
         left: -10px;
     }
-    
 }
 
 
@@ -452,6 +448,14 @@ footer a:hover{
     #tour-suggestion{
         position: relative;
         bottom: -45px;
+    }
+
+    #wrapper{
+        visibility: hidden;
+    }
+
+    #wrapper>section{
+        visibility: visible;
     }
 
     #dream-vacation {
@@ -474,15 +478,11 @@ footer a:hover{
        position: relative;
        bottom: 42px;
    }
-
-
 }
 
 
 /* Schermo Desktop */
 @media only screen and (min-width: 1450px) {
-
-
 
     #container {
         display: grid;
@@ -504,8 +504,6 @@ footer a:hover{
         justify-content: center;
     }
 
-    
-
     #tour{
         grid-area: sez1;
     }
@@ -524,11 +522,9 @@ footer a:hover{
         
     }
    
-
     #tour-suggestion{
         grid-area: sez2;
     }
-
 
     /* Raggruppamento delle prime tre sezioni */
     #tour,
@@ -542,7 +538,6 @@ footer a:hover{
         justify-self: center;
     }
 
-
     /* Bottone show more della terza sezione */
     #show-more{
         display: none;
@@ -553,7 +548,6 @@ footer a:hover{
         display: none;
     }
 
-
     #tour-suggestion {
         position: relative;
         bottom: 4px;
@@ -561,7 +555,6 @@ footer a:hover{
         justify-self: center;
         background: white;
     }
-
 
     #tour img {}
 
@@ -595,8 +588,6 @@ footer a:hover{
 
 @media only screen and (min-width: 1950px) {
 
-
-    
     main{
         display: grid;
         grid-template-columns: 650px 650px 650px;
@@ -607,9 +598,5 @@ footer a:hover{
         align-items: center;
         justify-content: center;
     }
-
-
-    
-
     
 }
