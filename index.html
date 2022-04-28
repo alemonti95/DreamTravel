@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="icon" href="media/favicon.ico">
     <script src="js/main.js" defer></script>
+    <script src="js/index.js" defer></script>
     <script src="js/carousel.js" defer></script>
     <title>YourDreams | Choose your vacation!</title>
 </head>
@@ -62,14 +63,13 @@
                 <section id="book-search">
                     <form id="form-booking" action="risultati.html">
                         <label class="book-title" for="date">Starting date</label>
-                        <input type="date" id="date">
+                        <input type="date" id="date" name="date" required>
                         <label class="book-title" for="end-date-title">End date</label>
-                        <input type="date" id="end-date-title">
+                        <input type="date" id="end-date-title" name="end-date-title" required>
                         <label class="book-title" for="text" id="locations-title">Locations</label>
-                        <input type="text" placeholder="Hawaii" id="text">
-                        <input type="submit" id="book-button" value="Book now!">
+                        <input type="text" placeholder="Hawaii" id="text" name="text" required>
+                        <input type="submit" id="book-button" value="Book now!" name="submit" onclick="saveData()">
                     </form>
-                    
                 </section>
         </div>
         <section id="slide-container">
